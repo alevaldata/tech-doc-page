@@ -1,0 +1,177 @@
+body {
+  font-family: Arial, system-ui;
+  background-color: rgb(55, 55, 55);
+  color: aliceblue;
+  line-height: 1.3em;
+}
+
+p {
+  text-align: justify;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 300px;
+  border-right: double;
+}
+
+#navbar header {
+  margin: 20px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  border-top: 0.5px solid;
+}
+
+#navbar li {
+  border-top: 0.5px solid;
+}
+
+#navbar li:first-of-type {
+  border-top: unset;
+}
+
+#navbar li:last-of-type {
+  border-bottom: 0.5px solid;
+  margin-bottom: -50px;
+}
+
+#navbar li:hover {
+  background-color: rgb(84, 84, 84);
+  font-size: 1.05em;
+}
+
+#navbar a {
+  display: block;
+  text-decoration: none;
+  color: floralwhite;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 300px;
+  padding: 0 20px;
+  margin-bottom: 110px;
+  width: 70%;
+}
+
+.main-section {
+  width: 100%;
+  border-bottom: gray dotted;
+  padding: 20px 0 10px;
+}
+
+.main-section:last-of-type {
+  border: unset;
+  margin: 0 0 20px;
+}
+
+.main-section header {
+  color: blanchedalmond;
+  font-size: 1.7em;
+}
+
+article {
+  font-size: 0.95em;
+}
+
+article li {
+  margin: 10px;
+  width: 60%;
+}
+
+.example-code {
+  display: block;
+  background-color: rgb(103, 100, 100);
+  border-color: dimgray;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 15px;
+  width: 80%;
+}
+
+code {
+  background-color: rgb(103, 100, 100);
+  border-radius: 5px;
+  padding: 2px;
+  margin: 2px;
+  overflow: auto;
+}
+
+.sample-code-img {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.output-div {
+  color: black;
+  line-height: normal;
+  background-color: aliceblue;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 15px;
+  width: 80%;
+  overflow: auto;
+}
+
+.output-div img {
+  width: 40%;
+}
+
+.attributes-list li {
+  list-style: none;
+  width: 70%;
+  margin: 10px -10px;
+}
+
+.comment {
+  color: rgb(176, 176, 176);
+}
+
+#mdn-link {
+  color: aquamarine;
+}
+
+@media only screen and (max-width: 830px) {
+  /* for smaller screens */
+  #navbar {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    border: 0.5px solid;
+  }
+
+  #navbar header {
+    height: 10%;
+  }
+
+  #navbar ul {
+    overflow: scroll;
+    height: 140px;
+  }
+
+  #main-doc {
+    margin: auto 1%;
+    padding: 0;
+    width: 95%;
+  }
+
+  .attributes-list li,
+  article li {
+    width: 100%;
+    margin-left: -15px;
+  }
+}
